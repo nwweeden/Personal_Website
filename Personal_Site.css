@@ -38,10 +38,6 @@ header * {
     list-style-type: none;
 }
 
-.nav > li {
-    padding-left: 30px;
-}
-
 .nav li a {
     color: black;
 }
@@ -129,48 +125,48 @@ header * {
     font-size: 20px;
 }
 
-.contact {
+footer {
     background-color:rgb(77, 72, 72);
     height: 150px;
     padding-top: 20px;
-    font-size: 20px;
-}
-
-.contact div {
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
-}
-
-.contact > * {
     text-align: center;
     color: white;
 }
 
-.contact ul {
+.contact {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: center;
+    margin-left: 0px;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
 }
 
-.contact li {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.contact li a {
+.contact div a {
     color: white;
     text-decoration: none;
 }
 
-@media (max-width: 750px){
+@media (max-width: 650px){
+    
     .title{
         font-size: 15px;
     }
     .all {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    header * {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .opening {
+        height: 90vh;
     }
     .opening .quote {
         font-size: 10px;
@@ -191,10 +187,13 @@ header * {
         width: 50%;
         height: 50%;
     }
-    .contact {
+    .background ul {
+        width: 80%;
+    }
+    .contact div{
         font-size: 10px;
     }
-    .contact div {
+    footer {
         font-size: 15px;
     }
 }
