@@ -49,7 +49,7 @@ header * {
 .opening {
     display:flex;
     flex-direction: row;
-    height: 900px;
+    height: 100vh;
     width: auto;
 }
 
@@ -162,4 +162,39 @@ header * {
 .contact li a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 750px){
+    .title{
+        font-size: 15px;
+    }
+    .all {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .opening .quote {
+        font-size: 10px;
+    }
+    .opening .quote div {
+        font-size: 20px;
+    }
+    .background > * {
+        flex-direction: column;
+    }
+    .background li {
+        font-size: 10px;
+    }
+    .background .summary {
+        font-size: 15px;
+    }
+    .background .professional1 img, .background .professional2 img, .background .education img{
+        width: 50%;
+        height: 50%;
+    }
+    .contact {
+        font-size: 10px;
+    }
+    .contact div {
+        font-size: 15px;
+    }
 }
